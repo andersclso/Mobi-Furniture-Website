@@ -1,0 +1,309 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	max-width: 100%;
+	height: 100%;
+	font-size: 10px;
+}
+
+/*MAIN SECTION*/
+
+header {
+	position: relative;
+}
+
+.TopMain .mobiMainButton {
+	font-size: 6.2rem;
+	font-weight: bold;
+	text-transform: lowercase;
+	color: red;
+	letter-spacing: 2px;
+	text-decoration: none;
+	top: 47px;
+	left: 130px;
+	position: absolute;
+	text-shadow: 0 0 2px #FF0000; /*added a slight red glow for more OOMPH as I found it to be missing something*/
+}
+
+.TopMain {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('images/breather-196130.jpg'); /*added gradient to darken background since the nav fonts were blending into the white walls.*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 121vh;
+}
+
+.TopMain nav {
+	float: right;
+	padding-right: 100px;
+	padding-top: 60px;
+}
+
+.TopMain nav li {
+	display: inline-block;
+}
+
+.TopMain nav ul li a {
+	list-style-type: none;
+	display: inline-block;
+	color: white;
+	font-size: 2rem;
+	padding-top: 10px;
+	padding-left: 22px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.TopMain nav ul li a:hover {
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+.firstTitle {
+	width: 600px;
+	position: absolute;
+	top: 410px;
+	left: 260px;
+}
+
+h1 {
+	font-size: 6rem;
+	color: white;
+}
+
+/* UPPER MID-SECTION*/
+
+.MidFeatures {
+	padding: 100px 100px 100px 100px;
+	height: 900px;
+	width: 100vw;
+	position: relative;
+}
+
+.upperimg1 {
+	height: 800px;
+	display: inline-block;
+	float: right;
+	padding: 0px 25px 25px 25px;
+}
+
+.upperimg2 {
+	height: 680px;
+	float: right;
+	position: relative;
+	top: 95px;
+}
+
+h2 {
+	font-size: 2.4rem;
+	color: grey;
+}
+
+h2.right:after {
+	content: "";
+	border-bottom: 2px solid grey;
+	width: 403px;
+	display: block;
+}
+
+.SeeMore {
+	font-size: 2rem;
+	color: red;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.MidParagraphs {
+	font-size: 4rem;
+	font-weight: bold;
+	color: black;
+	margin: 0 auto;
+	margin-bottom: 17px;
+}
+
+.feature1 {
+	display: inline-block;
+	padding-top: 300px;
+	padding-bottom: 300px;
+	width: 400px;
+	text-align: right;
+}
+
+/* MIDDLE MID-SECTION */
+
+.Middle {
+	padding: 5px 100px 5px 100px;
+	width: 100vw;
+	height: 840px;
+	display: block;
+}
+
+.Greybox {
+	position: relative;
+	background-color: rgb(250,250,255);
+	border: 2px solid white;
+	height: 751px;
+	width: 863px;
+	display: inline-block;
+}
+
+.feature2 {
+	display: inline-block;
+	top: 300px;
+	left: 390px;
+	position: relative;
+	text-align: right
+}
+
+.feature2 p {
+	width: 300px;
+	margin-right: 0;
+}
+
+.midImg {
+	float: right;
+	display: inline-block;
+	width: 579px;
+	height: auto;
+	padding-right: 100px;
+	padding-top: 30px;
+}
+
+/* LOWER MID-SECTION */
+
+.Lower {
+	padding: 5px 100px 100px 100px;
+	width: 100vw;
+	height: 670px;
+	display: inline-block;
+}
+
+h2.left:after {
+	content: "";
+	border-bottom: 2px solid grey;
+	width: 403px;
+	display: block;
+}
+
+.lowerImg {
+	width: 863px;
+	height: auto;
+	display: inline-block;
+	float: left;
+	padding-right: 75px;
+}
+
+.Greybox2 {
+	display: inline-block;
+	position: relative;
+	background-color: rgb(250,250,255);
+	border: 2px solid white;
+	height: 500px;
+	width:	550px;
+	top: 30px;
+}
+
+.feature3 {
+	position: relative;
+	display: inline-block;
+	top: 145px;
+	left: 70px;
+}
+
+/* BOTTOM SECTION */
+
+.BottomSection {
+	width: 100%;
+	height: 400px;
+	background-color: rgb(250,250,255);
+	border: 2px solid white;
+	padding: 0px 200px 0px 200px;
+	display: inline-block;
+	position: relative;
+	top: 725px;
+}
+
+.BottomSection nav ul {
+	padding-left: 0;
+}
+
+.BottomSection nav ul li {
+	list-style-type: none;
+}
+
+.BottomSection nav ul li a {
+	text-decoration: none;
+}
+
+.bottomMobiButton {
+	font-size: 6.2rem;
+	font-weight: bold;
+	text-transform: lowercase;
+	color: red;
+	letter-spacing: 2px;
+	text-shadow: 0 0 2px #FF0000;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	top: 70px;
+}
+
+.botLinks li a {
+	display: inline-block;
+	color: black;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.firstCol {
+	float: right;
+	position: relative;
+	right: 900px;
+	line-height: 30px;
+}
+
+.secondCol {
+	float: right;
+	position: relative;
+	right: 540px;
+	line-height: 30px;
+}
+
+.BottomSection p.Bot {
+	font-size: 2rem;
+	color: grey;
+	position: relative;
+	display: inline-block;
+	float: right;
+	width: 300px;
+	line-height: 30px;
+	bottom: 20px;
+}
+
+.BotLine:after {
+	content: "";
+	border-bottom: 2px solid grey;
+	width: 100%;
+	display: block;
+	position: relative;
+	top: 200px;
+}
+
+footer {
+	position: relative;
+	top: 220px;
+}
